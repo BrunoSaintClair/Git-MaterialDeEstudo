@@ -31,3 +31,5 @@ Com as alterações preparadas, para "commitar": 'git commit -m "___"  (os under
 
 Para passar alterações feitas nas outras branchs para outras ramificações:
 Dá git checkout para a branch que vai receber, e em seguida 'git merge ___ ', passando o nome da branch que vai ser mesclada.
+
+PAREI EM 22:49 -----      https://youtu.be/pyM5QLS2h6M?si=ZryT2bSinUIa5K3x
