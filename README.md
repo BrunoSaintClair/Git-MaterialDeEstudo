@@ -42,7 +42,7 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * 'git branch nome_da_branch '  -> Passando um nome como paramêtro você cria uma nova branch.
     * 'git checkout -b nome_da_branch '   -> Cria branch nova a partir da branch antiga e já muda para ela.
       
-* Vai para a branch passada como paramêtro:
+* Ur para outra branch:
     * 'git checkout nome_da_branch '
       
 * Para passar alterações feitas nas outras branchs para outras ramificações:
@@ -53,7 +53,7 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
 * Retorna a branch onde você está e se tem algo para commitar:
     * 'git status'
       
-* Retorna histórico de commits, incluindo o hash, que pode ser usado para voltar para aquele commit específico:
+* Retorna histórico de commits:
     * 'git log'
       
 * Mostra as diferenças do arquivo atual para o último commit:
