@@ -26,10 +26,17 @@ Com as alterações preparadas, para "commitar": 'git commit -m "___"  (os under
 'git restore __ ' -> restaura arquivo para o deixar identico ao último commit. 
 
 'git branch' -> mostra a branch atual
-'git checkout -b ___ ' -> cria branch nova a partir da branch antiga.
+'git checkout ou branch -b ___ ' -> cria branch nova a partir da branch antiga.
 'git checkout ____ ' -> vai para a branch selecionada. 
 
 Para passar alterações feitas nas outras branchs para outras ramificações:
 Dá git checkout para a branch que vai receber, e em seguida 'git merge ___ ', passando o nome da branch que vai ser mesclada.
 
-PAREI EM 22:49 -----      https://youtu.be/pyM5QLS2h6M?si=ZryT2bSinUIa5K3x
++ Repositório remoto:
+Com um repositório criado no github:
+'git remote add origin ___ ' -> link dado após criar o repositório
+'git push origin ___ ' -> nome da branch
+
+'git pull origin ___ ' -> nome da branch, puxa arquivos do repositório remoto
+
+'git fetch' -> traz as alterações que foram feitas no repositório remoto.
