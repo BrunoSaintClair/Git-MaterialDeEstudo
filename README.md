@@ -1,4 +1,14 @@
 # Git-MaterialDeEstudo
+
+ORGANIZAR EM TÓPICOS BONITINHO SE BASEANDO NO DE DOUGLAS, MUDAR AS PALAVRAS E APRIMORAR O MATERIAL
+PROXIMOS VIDEOS: 
+https://youtu.be/ts-H3W1uLMM?si=ij-upzLB3AlmFw8l
+https://youtu.be/Zwv9qRyVeU4?si=3sMUhwch-YDRmVhi
+
+
+
+
+
 Material de estudo de Git e Github.
 
 Git: software de controle de versão dsitribuído. 
