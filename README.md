@@ -60,18 +60,18 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * 'git diff'
       
 * Restaura arquivo para o deixar identico ao último commit: 
-    * 'git restore ___ '  -> passar nome do arquivo
+    * 'git restore nome_do_arquivo '  
 
 
 # Repositório remoto:
 Já com um repositório criado no github:
 
 * Enviar para repositório remoto:
-    * 'git remote add origin ___ '  -> passando link do repositório
-    * 'git push origin ___ ' -> nome da branch
+    * 'git remote add origin ___ '   -> passando link do repositório
+    * 'git push origin nome_da_branch ' 
 
 * Puxa arquivos do repositório remoto para o local:
-    * 'git pull origin ___ '  -> nome da branch
-
+    * 'git pull origin nome_da_branch '
+      
 * Traz as alterações que foram feitas no repositório remoto em relação ao repositório local:
     * 'git fetch' 
