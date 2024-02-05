@@ -26,7 +26,7 @@ Com as alterações preparadas, para "commitar": 'git commit -m "___"  (os under
 'git restore __ ' -> restaura arquivo para o deixar identico ao último commit. 
 
 'git branch' -> mostra a branch atual
-'git checkout ou branch -b ___ ' -> cria branch nova a partir da branch antiga.
+'git checkout -b ___ ' -> cria branch nova a partir da branch antiga.
 'git checkout ____ ' -> vai para a branch selecionada. 
 
 Para passar alterações feitas nas outras branchs para outras ramificações:
