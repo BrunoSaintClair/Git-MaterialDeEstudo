@@ -29,7 +29,7 @@ Com o git instalado, e o projeto aberto no editor de código:
 * Para modificar o commit mais recente:
     * 'git commit --amend -m "mensagem_de_commit" '  
 
-## Ramificações:
+## Ramificações/Branchs:
 A ramificação que contém a versão do código principal e que o cliente vai utilizar após alterações estáveis, se chama main/master. 
 
 A partir da branch principal, você pode criar novas pra ir fazendo alterações, pegando uma cópia da versão principal, e após isso, você pode passar as alterações pra branch principal, num processo chamado merge.
@@ -39,17 +39,17 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * 'git branch'
       
 * Criar branchs:
-    * 'git branch ___ '  -> Passando um nome como paramêtro você cria uma nova branch.
-    * 'git checkout -b ___ '   -> Cria branch nova a partir da branch antiga e já muda para ela.
+    * 'git branch nome_da_branch '  -> Passando um nome como paramêtro você cria uma nova branch.
+    * 'git checkout -b nome_da_branch '   -> Cria branch nova a partir da branch antiga e já muda para ela.
       
 * Vai para a branch passada como paramêtro:
-    * 'git checkout ____ '
+    * 'git checkout nome_da_branch '
       
 * Para passar alterações feitas nas outras branchs para outras ramificações:
     * Dá git checkout para a branch que vai receber a mescla
-    * 'git merge ___ ', passando o nome da branch que vai ser mesclada.
+    * 'git merge nome_da_branch ', passando o nome da branch que vai ser mesclada.
 
-## Outras coisas mais específicas:
+## Outras coisas:
 * Retorna a branch onde você está e se tem algo para commitar:
     * 'git status'
       
@@ -67,7 +67,7 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
 Já com um repositório criado no github:
 
 * Enviar para repositório remoto:
-    * 'git remote add origin ___ '   -> passando link do repositório
+    * 'git remote add origin link_do_repositorio ' 
     * 'git push origin nome_da_branch ' 
 
 * Puxa arquivos do repositório remoto para o local:
