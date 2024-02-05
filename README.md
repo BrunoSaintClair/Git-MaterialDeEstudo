@@ -18,7 +18,9 @@ Para iniciar o git digitar no terminal 'git init'
 Para enviar as alterações para o histórico/"commitar":
 'git add .' -> pega todos arquivos alterados e adiciona num estágio para commit. 
 'git add ____ ' -> adiciona num estágio para commit apenas o arquivo indicado onde estam os underlines. 
-Com as alterações preparadas, para "commitar": 'git commit -m "___"  (os underlines representam o lugar onde se deve colocar o nome do commit)
+Com as alterações preparadas, para "commitar": 
+'git commit -m "___"  (os underlines representam o lugar onde se deve colocar o nome do commit)
+'git commit --amend' -> modifica o commit mais recente
 
 'git status' -> retorna a branch onde você está e se tem algo para commitar. 
 'git log' -> retorna histórico de commits, incluindo o hash, que pode ser usado para voltar para aquele commit específico. 
