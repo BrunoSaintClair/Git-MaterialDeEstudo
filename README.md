@@ -18,13 +18,16 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 Com o git instalado, e o projeto aberto no editor de código:
 
 * Para iniciar o git, digitar no terminal:
-    * 'git init' 
+    * 'git init'
+      
 * Para enviar as alterações para o histórico/"commitar":
-    * 'git add .' ou 'git add ___ '  -> pega os arquivos alterados e adiciona num estágio para commit. 
+    * 'git add .' ou 'git add nome_do_arquivo '  -> pega os arquivos alterados e adiciona num estágio para commit.
+      
 * Com as alterações preparadas, para "commitar": 
-    * 'git commit -m "+++"  
+    * 'git commit -m "mensagem_de_commit"
+      
 * Para modificar o commit mais recente:
-    * 'git commit --amend'  
+    * 'git commit --amend -m "mensagem_de_commit" '  
 
 ## Ramificações:
 A ramificação que contém a versão do código principal e que o cliente vai utilizar após alterações estáveis, se chama main/master. 
@@ -33,23 +36,29 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
 
 # Entre ramificações:
 * Mostra a branch atual:
-    * 'git branch' 
+    * 'git branch'
+      
 * Criar branchs:
     * 'git branch ___ ' -> Passando um nome como paramêtro você cria uma nova branch.
     * 'git checkout -b ___ '  -> Cria branch nova a partir da branch antiga e já muda para ela.
+      
 * Vai para a branch passada como paramêtro:
-    * 'git checkout ____ ' 
+    * 'git checkout ____ '
+      
 * Para passar alterações feitas nas outras branchs para outras ramificações:
     * Dá git checkout para a branch que vai receber a mescla
     * 'git merge ___ ', passando o nome da branch que vai ser mesclada.
 
 ## Outras coisas mais específicas:
 * Retorna a branch onde você está e se tem algo para commitar:
-    * 'git status' 
+    * 'git status'
+      
 * Retorna histórico de commits, incluindo o hash, que pode ser usado para voltar para aquele commit específico:
-    * 'git log' 
+    * 'git log'
+      
 * Mostra as diferenças do arquivo atual para o último commit:
-    * 'git diff' 
+    * 'git diff'
+      
 * Restaura arquivo para o deixar identico ao último commit: 
     * 'git restore ___ ' -> passar nome do arquivo
 
@@ -66,10 +75,3 @@ Já com um repositório criado no github:
 
 * Traz as alterações que foram feitas no repositório remoto em relação ao repositório local:
     * 'git fetch' 
-
-
-
-
-Legenda:
-___   -> lugar onde se deve colocar nome de arquivos/branchs.
-+++   -> lugar onde se deve colocar mensagens.
