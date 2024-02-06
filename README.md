@@ -14,11 +14,11 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 
 
 # Configurações Iniciais:
-3:02 GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)
-
+Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
+   * git config --global user.name "nome_exemplo"
+   * git config --global user.email "email@exemplo"
+     
 # Na prática: 
-Com o git instalado, e o projeto aberto no editor de código:
-
 * Para iniciar o git, digitar no terminal:
     * 'git init'
       
@@ -62,7 +62,12 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * 'git diff'
       
 * Restaura arquivo para o deixar identico ao último commit: 
-    * 'git restore nome_do_arquivo '  
+    * 'git restore nome_do_arquivo '
+
+* Clonar repositório existente:
+     * 'git clone link_repositorio.git'
+
+  
 
 
 # Repositório remoto:
