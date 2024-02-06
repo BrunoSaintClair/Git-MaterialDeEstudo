@@ -15,9 +15,10 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 
 # Configurações Iniciais:
 Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
-   ''' git config --global user.name "nome_exemplo"
+   ```
+       git config --global user.name "nome_exemplo"
        git config --global user.email "email@exemplo"
-   '''
+   ```
    
 # Na prática: 
 * Para iniciar o git, digitar no terminal:
