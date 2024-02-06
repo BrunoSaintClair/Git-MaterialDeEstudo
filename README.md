@@ -13,6 +13,8 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 * Segurança e Organização. 
 
 
+# Configurações Iniciais:
+3:02 GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)
 
 # Na prática: 
 Com o git instalado, e o projeto aberto no editor de código:
@@ -42,7 +44,7 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * 'git branch nome_da_branch '  -> Passando um nome como paramêtro você cria uma nova branch.
     * 'git checkout -b nome_da_branch '   -> Cria branch nova a partir da branch antiga e já muda para ela.
       
-* Ur para outra branch:
+* Ir para outra branch:
     * 'git checkout nome_da_branch '
       
 * Para passar alterações feitas nas outras branchs para outras ramificações:
