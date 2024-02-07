@@ -16,19 +16,23 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 # Configurações Iniciais:
 Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
    ```
-       git config --global user.name "nome_exemplo"
-       git config --global user.email "email@exemplo"
+       git config --global user.name <Nome>
+       git config --global user.email <Email>
    ```
    
 # Na prática: 
-* Para iniciar o git, digitar no terminal:
+* Para iniciar o git na pasta atual, digitar no terminal:
     * 'git init'
+    Se você já possui um repositório anterior ou deseja criar um repositório com um nome em específico, você pode passar o nome como parâmetro do comando:
+
+    * git init <O nome do seu repositório>
       
 * Para enviar as alterações para o histórico/"commitar":
-    * 'git add .' ou 'git add nome_do_arquivo '   -> pega os arquivos alterados e adiciona num estágio para commit.
+    * 'git add .' ou 'git add <Nome do arquivo> '   -> pega os arquivos alterados e adiciona num estágio para commit.
       
 * Com as alterações preparadas, para "commitar": 
-    * 'git commit -m "mensagem_de_commit"
+    * 'git commit -a -m "mensagem_de_commit" '
+    Onde o -a adiciona todo tipo de arquivo ao commit, e o -m te dá a possibilidade de adcionar uma mensagem para o commit.
       
 * Para modificar o commit mais recente:
     * 'git commit --amend -m "mensagem_de_commit" '  
@@ -38,7 +42,6 @@ A ramificação que contém a versão do código principal e que o cliente vai u
 
 A partir da branch principal, você pode criar novas pra ir fazendo alterações, pegando uma cópia da versão principal, e após isso, você pode passar as alterações pra branch principal, num processo chamado merge.
 
-# Entre ramificações:
 * Mostra a branch atual:
     * 'git branch'
       
@@ -53,18 +56,18 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
     * Dá git checkout para a branch que vai receber a mescla
     * 'git merge nome_da_branch ', passando o nome da branch que vai ser mesclada.
  
+* Retorna a branch onde você está e se tem algo para commitar:
+    * 'git status'
+
 * Para deletar branch:
    * 'git branch -D nome_da_branch'
 
 ## Outras coisas:
-* Retorna a branch onde você está e se tem algo para commitar:
-    * 'git status'
       
 * Retorna histórico de commits:
     * 'git log'
     * 'git shortlog'
-      
-      
+         
 * Mostra as diferenças do arquivo atual para o último commit:
     * 'git diff'
       
