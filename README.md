@@ -52,6 +52,9 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
 * Para passar alterações feitas nas outras branchs para outras ramificações:
     * Dá git checkout para a branch que vai receber a mescla
     * 'git merge nome_da_branch ', passando o nome da branch que vai ser mesclada.
+ 
+* Para deletar branch:
+   * 'git branch -D nome_da_branch'
 
 ## Outras coisas:
 * Retorna a branch onde você está e se tem algo para commitar:
@@ -59,6 +62,8 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
       
 * Retorna histórico de commits:
     * 'git log'
+    * 'git shortlog'
+      
       
 * Mostra as diferenças do arquivo atual para o último commit:
     * 'git diff'
