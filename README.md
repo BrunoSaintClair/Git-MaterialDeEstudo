@@ -17,8 +17,8 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
 
    ```
-       git config --global user.name <Nome>
-       git config --global user.email <Email>
+          git config --global user.name <Nome>
+          git config --global user.email <Email>
    ```
    
 
@@ -62,7 +62,7 @@ Com as alterações preparadas, para "commitar":
 É possível realizar o add e o commit em um único comando com:
 
 ```
-      git commit -a
+         git commit -a
 ```
 
 
@@ -75,7 +75,7 @@ Para modificar o commit mais recente:
 ```
 
 
-## Ramificações/Branchs:
+# Ramificações/Branchs:
 A ramificação que contém a versão do código principal e que o cliente vai utilizar após alterações estáveis, se chama main/master. 
 
 A partir da branch principal, você pode criar novas pra ir fazendo alterações, pegando uma cópia da versão principal, e após isso, você pode passar as alterações pra branch principal, num processo chamado merge.
@@ -126,6 +126,18 @@ Alterar nome de uma branch:
 ```
         git branch -b <Novo nome da branch>
 ```
+
+Arquivar as alterações em uma branch sem precisar commitar (possibilitando navegar entre branchs sem precisar commitar algo que está incompleto):
+
+```
+      git stash
+```
+
+Para voltar a ter acesso ao que está arquivado:
+
+```
+      git stash apply
+```
  
 
 Retorna a branch onde você está e se tem algo para commitar:
@@ -144,16 +156,16 @@ Para deletar branch:
 # Repositório remoto:
 Já com um repositório criado no github:
 
-Enviar para repositório remoto:
+* Enviar para repositório remoto:
 
-* Adiciona o repositório:
+Adiciona o repositório:
 
 ```
-     git remote add origin <Link do repositório .git> 
+        git remote add origin <Link do repositório .git> 
 ```
 
 
-* Envia:
+Envia:
 
 ```
         git push origin <Nome da branch>
@@ -183,12 +195,12 @@ Traz as alterações que foram feitas no repositório remoto em relação ao rep
 ``` 
 
 
-## Outras coisas:
+# Outras coisas:
 Retorna histórico de commits:
 
 ```
-    git log
-    git shortlog
+       git log
+       git shortlog
 ```
 
 
@@ -206,7 +218,7 @@ Restaura arquivo para o deixar identico ao último commit:
 ```
 
 
-Permite selecionar qualquer commit específico de uma branch e aplicá-lo a outra:
+Permite selecionar qualquer commit específico de uma branch e suas alterações, e aplicá-lo a outra:
 
 ```
         git cherry-pick <Commit Hash ou tag>
@@ -219,6 +231,12 @@ Remove arquivos presentes na pasta que ainda não foram adicionados à fila pré
         git clean -f
 ```
 
+Alterar um commit, apagar o último commit, fazer um novo commit, com as novas alterações que tinham no anterior mais as alterações novas que você fez e mais a mensagem de commit, que pode ser a mesma ou uma nova:
+   * Também altera o hash do commit, o que pode causar problema na hora de enviar a branch que possui esse commit alterado pro repositório remoto
+
+```
+      git commit --ammend
+```
 
 Volta o arquivo para o jeito que estava no último commit:
 
