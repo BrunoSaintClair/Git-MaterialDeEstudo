@@ -16,44 +16,44 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 # Configurações Iniciais:
 Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
 
-   ```
-          git config --global user.name <Nome>
-          git config --global user.email <Email>
-   ```
+```
+git config --global user.name <Nome>
+git config --global user.email <Email>
+```
    
 
 # Na prática: 
 Para iniciar o git na pasta atual, digitar no terminal:
 ```
-        git init
+git init
 ```
 
 
 * Se você já possui um repositório anterior ou deseja criar um repositório com um nome em específico, você pode passar o nome como parâmetro do comando:
 
 ```
-        git init <O nome do seu repositório>
+git init <O nome do seu repositório>
 ```
 
 
 Adiciona seus arquivos modificados à fila para serem submetidos a um commit posteriormente:
 
 ```
-        git add . 
+git add . 
 ```
 
 
 * Ou caso queira adicionar apenas um arquivo específico:
 
 ```    
-        git add <Nome do arquivo>
+git add <Nome do arquivo>
 ```
 
 
 Com as alterações preparadas, para "commitar": 
 
 ```
-        git commit -a -m <Mensagem no Commit>
+git commit -a -m <Mensagem no Commit>
 ```
 
 
@@ -62,7 +62,7 @@ Com as alterações preparadas, para "commitar":
 É possível realizar o add e o commit em um único comando com:
 
 ```
-         git commit -a
+git commit -a
 ```
 
 
@@ -71,7 +71,7 @@ Com as alterações preparadas, para "commitar":
 Para modificar o commit mais recente:
 
 ```
-        git commit --amend -m <Mensagem no Commit>
+git commit --amend -m <Mensagem no Commit>
 ```
 
 
@@ -83,22 +83,22 @@ A partir da branch principal, você pode criar novas pra ir fazendo alterações
 Lista todas as branchs:
 
 ```
-        git branch
+git branch
 ```
       
       
 Criar branchs:
 
 ```
-        git branch <Nome da branch>
-        git checkout -b <Nome da branch>  // Cria branch nova a partir da antiga e já muda para ela.
+git branch <Nome da branch>
+git checkout -b <Nome da branch>  // Cria branch nova a partir da antiga e já muda para ela.
 ```
       
 
 Ir para outra branch:
 
 ```
-        git checkout <Nome da branch>
+git checkout <Nome da branch>
 ```
       
 
@@ -107,14 +107,14 @@ Para passar alterações feitas em branchs para outras ramificações:
 * Dá git checkout para a branch que vai receber a mescla, e em seguida:
 
 ```
-        git merge <Nome da branch>  // passando o nome da branch que vai ser mesclada.
+git merge <Nome da branch>  // passando o nome da branch que vai ser mesclada.
 ```
     
 
 Para mesclar as branchs pode ser necessário fazer um:
 
 ```
-        git rebase <Nome da branch> 
+git rebase <Nome da branch> 
 ```
     
 
@@ -124,32 +124,32 @@ Para mesclar as branchs pode ser necessário fazer um:
 Alterar nome de uma branch:
 
 ```
-        git branch -b <Novo nome da branch>
+git branch -b <Novo nome da branch>
 ```
 
 Arquivar as alterações em uma branch sem precisar commitar (possibilitando navegar entre branchs sem precisar commitar algo que está incompleto):
 
 ```
-      git stash
+git stash
 ```
 
 Para voltar a ter acesso ao que está arquivado:
 
 ```
-      git stash apply
+git stash apply
 ```
  
 
 Retorna a branch onde você está e se tem algo para commitar:
 
 ```
-        git status
+git status
 ```
 
 Para deletar branch:
 
 ```
-        git branch -D <Nome da branch>
+git branch -D <Nome da branch>
 ```
 
 
@@ -161,28 +161,28 @@ Já com um repositório criado no github:
 Adiciona o repositório:
 
 ```
-        git remote add origin <Link do repositório .git> 
+git remote add origin <Link do repositório .git> 
 ```
 
 
 Envia:
 
 ```
-        git push origin <Nome da branch>
+git push origin <Nome da branch>
 ```
 
 
 Puxa arquivos do repositório remoto para o local e atualiza seu conteúdo para a última versão:
 
 ```
-        git pull <Nome da branch>
+git pull <Nome da branch>
 ```
 
       
 Clonar repositório existente:
 
 ```
-        git clone <Link do repositório .git>
+git clone <Link do repositório .git>
 ```
 
 
@@ -191,7 +191,7 @@ Clonar repositório existente:
 Traz as alterações que foram feitas no repositório remoto em relação ao repositório local:
 
 ```    
-        git fetch
+git fetch
 ``` 
 
 
@@ -199,47 +199,66 @@ Traz as alterações que foram feitas no repositório remoto em relação ao rep
 Retorna histórico de commits:
 
 ```
-       git log
-       git shortlog
+git log
+git shortlog
+git reflog
 ```
 
 
 Mostra as diferenças do arquivo atual para o último commit:
 
 ```
-        git diff
+git diff
 ```
       
 
 Restaura arquivo para o deixar identico ao último commit: 
 
 ```
-        git restore <Nome do arquivo>
+git restore <Nome do arquivo>
 ```
 
 
 Permite selecionar qualquer commit específico de uma branch e suas alterações, e aplicá-lo a outra:
 
 ```
-        git cherry-pick <Commit Hash ou tag>
+git cherry-pick <Commit Hash ou tag>
 ```
 
 
 Remove arquivos presentes na pasta que ainda não foram adicionados à fila pré-commit:
 
 ```
-        git clean -f
+git clean -f
 ```
 
 Alterar um commit, apagar o último commit, fazer um novo commit, com as novas alterações que tinham no anterior mais as alterações novas que você fez e mais a mensagem de commit, que pode ser a mesma ou uma nova:
    * Também altera o hash do commit, o que pode causar problema na hora de enviar a branch que possui esse commit alterado pro repositório remoto
 
 ```
-      git commit --ammend
+git commit --ammend -m <Mensagem do commit>
 ```
 
 Volta o arquivo para o jeito que estava no último commit:
 
 ```
-        git checkout <Nome do arquivo>
+git checkout <Nome do arquivo>
+```
+
+Pega os arquvios presentes nos commits posteriores ao indicado no Hash, e adicionada eles na árvore de trabalho, como untracked files:
+
+```
+git reset <Hash de um commit>
+```
+
+Pega os arquvios presentes nos commits posteriores ao indicado no Hash, e põe eles na área de preparação:
+
+```
+git reset --soft <Hash de um commit>
+```
+
+Retorna para o commit indicado no Hash, e exclui o que veio posterior a ele:
+
+```
+git reset --hard <Hash de um commit>
 ```
