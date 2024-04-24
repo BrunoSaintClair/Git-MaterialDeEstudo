@@ -12,6 +12,7 @@ Um commit no git salva na sua máquina um repositório local com as alterações
 * Ramificação do projeto
 * Segurança e Organização. 
 
+[Documentação do Git](https://git-scm.com/doc)
 
 # Configurações Iniciais:
 Com o git já instalado na máquina, pra configurar o usuário que irá usar o repositório local:
@@ -185,8 +186,13 @@ Clonar repositório existente:
 git clone <Link do repositório .git>
 ```
 
-
 * Se você tiver autorização, quando você der um push no repositório que foi clonado, as alterações vão para o repositório remoto que foi clonado.
+
+Clonar apenas uma branch específica de um repositório existente:
+
+```
+git clone <Link do repositório .git> --branch <Nome da branch> --single-branch
+```
 
 Traz as alterações que foram feitas no repositório remoto em relação ao repositório local:
 
